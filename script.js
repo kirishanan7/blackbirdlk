@@ -836,8 +836,8 @@ const products = [
         id: 57,
         name: "Lamborghini mini car",
         category: "Electronics",
-        price: 12000,
-        original: 8500,
+        price: 9000,
+        original: 12000,
         badge: "new",
         rating: 5.0,
         reviews: 0,
@@ -862,8 +862,8 @@ const products = [
         id: 58,
         name: "Bmw mini car",
         category: "Electronics",
-        price: 12000,
-        original: 9000,
+        price: 9000,
+        original: 12000,
         badge: "new",
         rating: 5.0,
         reviews: 0,
@@ -889,10 +889,6 @@ const products = [
 
 // ─── Fisher-Yates Shuffle (with Spiderman mask pinned at top) ────
 function shuffle(array) {
-    const pinIndex = array.findIndex(p => p.id === 15);
-    let pinItem = null;
-    if (pinIndex !== -1) {
-        pinItem = array.splice(pinIndex, 1)[0];
     }
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
