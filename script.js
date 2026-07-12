@@ -3,35 +3,7 @@
    ===================================================== */
 
 // ─── Product Data ────────────────────────────────────
-const products = [
-    {
-        id: 1,
-        name: "Men's Silver Lion Ring",
-        category: "Fashion",
-        price: 1000,
-        original: null,
-        badge: "new",
-        rating: 5.0,
-        reviews: 1,
-        freeDelivery: true,
-        img: "product_img/WhatsApp Image 2026-06-12 at 10.55.13 AM.jpeg",
-        details: {
-            description: "A bold and premium men's ring crafted in the shape of a majestic lion — symbolising strength, courage, and royalty. Made from high-quality silver-finish alloy, this ring is designed for men who make a statement without saying a word.",
-            material: "Silver-finish alloy (nickel-free)",
-            style: "Lion Head Signet Ring",
-            finish: "Polished silver",
-            occasion: "Casual, Party, Gift",
-            sizes: ["7", "8", "9", "10", "11"],
-            highlights: [
-                "🦁 Intricate lion face detailing",
-                "💍 Comfortable wide band",
-                "✨ High-polish silver finish",
-                "🚚 Rs 300 Delivery Fee",
-                "💵 Cash on Delivery only",
-                "🎁 Perfect as a gift"
-            ]
-        }
-    },
+const products =2-. 
     {
         id: 2,
         name: "P9 Pro Max Wireless Headphone",
@@ -836,8 +808,8 @@ const products = [
         id: 57,
         name: "Lamborghini mini car",
         category: "Electronics",
-        price: 12000,
-        original: 8500,
+        price: 9000,
+        original: 12000,
         badge: "new",
         rating: 5.0,
         reviews: 0,
@@ -862,8 +834,8 @@ const products = [
         id: 58,
         name: "Bmw mini car",
         category: "Electronics",
-        price: 12000,
-        original: 9000,
+        price: 9000,
+        original: 12000,
         badge: "new",
         rating: 5.0,
         reviews: 0,
@@ -889,11 +861,6 @@ const products = [
 
 // ─── Fisher-Yates Shuffle (with Spiderman mask pinned at top) ────
 function shuffle(array) {
-    const pinIndex = array.findIndex(p => p.id === 15);
-    let pinItem = null;
-    if (pinIndex !== -1) {
-        pinItem = array.splice(pinIndex, 1)[0];
-    }
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
